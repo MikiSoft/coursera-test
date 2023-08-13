@@ -3,8 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Documento test</title>
+    <style>
+
+        * {
+            margin: 0;
+            box-sizing: content-box;
+        }
+        header {
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+
+        }
+        .logo{
+            width: 10%;
+            /* float: left; */
+        }
+        nav {
+            /* float: right; */
+        }
+        section {
+            /* clear: both; */
+        }
+        .lista{
+            
+            display:flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        .lista_hor {
+            padding: 10px;
+            background-color: brown;
+            margin-right: 20px;
+            width: 75px;
+            text-align: center;
+        }
+        .enlace_cab{
+            color:white;
+            text-decoration: none;
+        }
+        .enlace_cab:hover{
+            color:coral;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Esto es un ejemplo de página web</h1>
+    <header>
+        <img class="logo" src="https://w7.pngwing.com/pngs/973/11/png-transparent-logo-phoenix-illustration-phoenix-logo-design-phoenix-illustration-free-logo-design-template-photography-orange.png" alt="">
+        <nav>
+            <ul class="lista">
+                <li class="lista_hor"><a class="enlace_cab" href="#">Menú</a></li>
+                <li class="lista_hor"><a class="enlace_cab" href="#">Reservas</a></li>
+                <li class="lista_hor"><a class="enlace_cab" href="#">Dónde estamos</a></li>
+                <li class="lista_hor"><a class="enlace_cab" href="#">Contacta</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
